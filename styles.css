@@ -12,10 +12,18 @@
   --off-white: #ffffff;
 }
 
+@font-face {
+  font-family: "Effra";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/effra-webfont/Effra_Std_Rg.woff");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Effra", Helvetica, sans-serif;
 }
 
 html {
@@ -97,7 +105,7 @@ nav li {
 }
 
 .headline {
-  font-size: 7em;
+  font-size: 7.2em;
   color: white;
 }
 
@@ -117,10 +125,53 @@ nav li {
   width: 20%;
   height: 18%;
   border-radius: 40px;
+  min-width: 180px;
 }
 
 .hero-cta span {
   font-size: 18px;
   font-weight: 700;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Green section */
+
+.green-section {
+  background-color: var(--primary-1);
+  width: 100vw;
+  height: 100vh;
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.green-container {
+  width: 70%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.green-container h1 {
+  font-size: 7.2em;
+}
+
+.white-box {
+  width: 500px;
+  height: 200px;
+  border-radius: 16px;
+  background-color: var(--grey-3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.white-box img {
+  width: 341px;
+  height: 82px;
 }
