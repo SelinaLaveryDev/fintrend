@@ -248,5 +248,15 @@ h3 {
 
 .connect {
   background-color: var(--grey-4);
+  width: 100vw;
   height: 100vh;
+  padding-top: 100px;
+  border: 2px solid pink;
+}
+
+.connect-container {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
