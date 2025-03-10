@@ -115,7 +115,9 @@ nav li {
 }
 
 .headline,
-.hero-container p {
+.hero-container p,
+.green-container p,
+.green-container h1 {
   text-align: center;
 }
 
@@ -149,7 +151,7 @@ nav li {
 
 .green-container {
   width: 70%;
-  height: 50%;
+  height: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -174,4 +176,77 @@ nav li {
 .white-box img {
   width: 341px;
   height: 82px;
+}
+
+.green-container p {
+  font-size: 1.8em;
+}
+
+/* how it works section */
+
+.how-it-works .connect {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.how-it-works article {
+  width: 80%;
+  margin: 10%;
+}
+
+h3 {
+  font-size: 6.4em;
+  font-weight: 700;
+}
+
+.grey-text {
+  color: var(--grey-2);
+}
+
+/* grid section */
+
+.partner-section {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.partner-section h3 {
+  margin-bottom: 100px;
+}
+
+.grid {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.grid div {
+  width: 266px;
+  height: 120px;
+  background-color: var(--grey-3);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid div img {
+  width: 200px;
+}
+
+/* connect section */
+
+.connect {
+  background-color: var(--grey-4);
+  height: 100vh;
 }
