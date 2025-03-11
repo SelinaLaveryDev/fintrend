@@ -76,7 +76,7 @@ nav ul {
 
 nav li {
   display: flex;
-  font-size: 1.8em;
+  font-size: 1.5em;
   color: var(--off-white);
   font-weight: 100;
   list-style: none;
@@ -548,30 +548,27 @@ footer ul li {
   list-style: none;
 }
 
+/* anything over 1020 */
 @media only screen and (min-width: 951px) {
+  .mobile-nav-logo {
+    display: none;
+  }
   .mobile-nav {
     display: none;
   }
 }
 
-@media only screen and (min-width: 951px) {
-  .nav {
-    padding: 20px;
-  }
-  .mobile-nav-logo {
-    display: none;
-  }
-}
+/* up to 1090 */
 @media only screen and (max-width: 1090px) {
   .nav {
     padding: 20px;
   }
 }
 
+/* up to 950 */
 @media only screen and (max-width: 950px) {
   .nav {
     display: none;
-    position: relative;
   }
 
   .mobile-nav {
@@ -612,15 +609,66 @@ footer ul li {
   }
 }
 
+@media only screen and (min-width: 650px) {
+  .mobile-tabs {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 650px) {
   .headline {
     font-size: 3.6em;
     font-weight: 900;
   }
 
+  .hero-section {
+    justify-content: flex-start;
+  }
+
   .hero-container {
     justify-content: center;
     gap: 30px;
     padding: 0 30px;
+  }
+  .mobile-tabs {
+    width: 293px;
+    height: 312px;
+    background-color: green;
+  }
+  .tab {
+    background-color: #181818;
+    width: 300px;
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    gap: 12px;
+    padding: 0 0 0 35px;
+  }
+  .tab img {
+    width: 27px;
+    height: 27px;
+  }
+  .tab p {
+    font-size: 1.7em;
+    color: white;
+  }
+  .fade-square {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90px;
+    height: 78px;
+    background: linear-gradient(
+      90deg,
+      rgba(24, 24, 24, 0.8),
+      rgba(24, 24, 24, 1)
+    );
+  }
+  .close {
+    z-index: 1;
+    width: 14px;
+    height: 14px;
   }
 }
