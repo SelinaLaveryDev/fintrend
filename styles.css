@@ -51,6 +51,7 @@ button {
   justify-content: space-around;
   width: 100%;
   height: 10%;
+  margin-top: 10px;
 }
 
 .nav-logo {
@@ -151,7 +152,7 @@ nav li {
 .green-section {
   background-color: var(--primary-1);
   width: 100vw;
-  height: 100vh;
+  height: 742px;
   color: var(--black);
   display: flex;
   flex-direction: column;
@@ -313,4 +314,220 @@ h3 {
   justify-content: center;
   gap: 50px;
   margin-bottom: 150px;
+}
+
+/* pricing section */
+
+.pricing {
+  width: 100vw;
+  height: 1128px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing h3 {
+  color: white;
+  font-size: 6.4em;
+}
+
+.toggle {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.toggle p {
+  color: white;
+  font-size: 2.4em;
+  font-weight: 500;
+}
+
+.bg {
+  width: 104px;
+  height: 52px;
+  background-color: white;
+  border-radius: 99px;
+  position: relative;
+}
+
+.circle {
+  width: 36px;
+  height: 36px;
+  background-color: #a8ff35;
+  border-radius: 50px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.price-cards {
+  width: 1140px;
+  height: 640px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card,
+.card-green {
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 360px;
+  height: 100%;
+}
+
+/* .price-cards:nth-child(2) {
+  background-color: #a8ff35;
+} */
+
+.card {
+  background-color: white;
+}
+
+.card-green {
+  background-color: var(--primary-1);
+}
+
+.benefits-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card h3,
+.card-green h3 {
+  font-size: 3.6em;
+  color: black;
+  margin-bottom: 8px;
+}
+
+hr {
+  width: 296px;
+  margin: 16px 0;
+  opacity: 20%;
+}
+
+.top-container {
+  height: 80%;
+  margin-top: 20px;
+}
+
+.bottom-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 296px;
+  height: 20%;
+}
+
+.green-button {
+  background-color: var(--primary-1);
+}
+
+.green-button,
+.black-btn {
+  width: 100%;
+  height: 58px;
+  border-radius: 30px;
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+.top-container span {
+  font-size: 6.4em;
+  font-weight: 400;
+}
+
+.top-container p {
+  font-size: 1.8em;
+  font-weight: 400;
+}
+
+.benefit {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 50px;
+  gap: 10px;
+}
+
+.benefit img {
+  width: 14px;
+  height: 9px;
+}
+
+.black-btn {
+  background-color: var(--black);
+  color: white;
+}
+
+/* contact */
+
+.contact {
+  background-color: var(--primary-1);
+  width: 100vw;
+  height: 539px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-container {
+  height: 250px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-container h1 {
+  font-size: 7.2em;
+  font-weight: 900;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-container span {
+  color: var(--green-2);
+}
+
+.contact-btn {
+  background-color: var(--black);
+  color: white;
+  width: 180px;
+  height: 57px;
+  border-radius: 40px;
+}
+
+footer {
+  width: 100vw;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer img {
+  width: 170px;
+  height: 41px;
+  margin-left: 80px;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 544px;
+  height: 18px;
+  gap: 40px;
+}
+
+footer ul li {
+  list-style: none;
 }
