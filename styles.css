@@ -24,6 +24,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Effra", Helvetica, sans-serif;
+  border: 1px solid hotpink;
 }
 
 html {
@@ -48,10 +49,10 @@ button {
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  height: 10%;
-  margin-top: 10px;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100px;
+  padding: 20px 80px;
 }
 
 .nav-logo {
@@ -60,7 +61,10 @@ button {
 }
 
 nav ul {
+  width: 1000px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   gap: 40px;
 }
 
@@ -72,14 +76,22 @@ nav li {
   list-style: none;
 }
 
-.cta-btns {
-  align-items: center;
+.nav-links {
+  display: flex;
+  gap: 40px;
 }
 
-.cta-btns a {
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
+.cta-btns-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 213px;
+  height: 42px;
+}
+
+.login {
+  color: white;
+  font-size: 1.8em;
 }
 
 .login {
@@ -233,7 +245,8 @@ h3 {
 }
 
 .grid {
-  width: 80%;
+  width: 1160px;
+  height: 576px;
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -530,4 +543,64 @@ footer ul {
 
 footer ul li {
   list-style: none;
+}
+
+@media only screen and (min-width: 951px) {
+  .nav {
+    padding: 20px;
+  }
+  .mobile-nav-logo {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1090px) {
+  .nav {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .nav {
+    display: none;
+    position: relative;
+  }
+
+  .mobile-nav {
+    display: flex;
+    height: 88px;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+  }
+
+  .mobile-nav-logo {
+    width: 44px;
+    height: 44px;
+    marg
+  }
+  .mobile-nav ul {
+    position: absolute;
+    top: 0px;
+    padding: 20px 0;
+    background-color: black;
+    display: none;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 24px;
+    height: 24px;
+  }
+
+  .line {
+    width: 18px;
+    border: 1px solid white;
+    border-radius: 50px;
+  }
 }
