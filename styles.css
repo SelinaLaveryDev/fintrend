@@ -33,6 +33,7 @@ html {
 button {
   border: none;
   padding: 12px 32px;
+  cursor: pointer;
 }
 
 .container {
@@ -72,6 +73,12 @@ nav li {
 
 .cta-btns {
   align-items: center;
+}
+
+.cta-btns a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
 }
 
 .login {
@@ -289,6 +296,10 @@ h3 {
   background-color: white;
 }
 
+.platform-logos div:nth-child(2) {
+  background-color: var(--primary-1);
+}
+
 .platform-logos div img {
   width: 60px;
   height: 60px;
@@ -301,5 +312,5 @@ h3 {
   align-items: center;
   justify-content: center;
   gap: 50px;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
