@@ -31,6 +31,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 section,
 footer {
   min-width: 350px;
@@ -163,7 +167,10 @@ nav li {
 }
 
 /* Green section */
-
+.arrow1,
+.arrow2 {
+  display: none;
+}
 .green-section {
   background-color: var(--primary-1);
   width: 100vw;
@@ -177,11 +184,12 @@ nav li {
 
 .green-container {
   width: 70%;
-  height: 60%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 10%;
 }
 
 .green-container h1 {
@@ -248,8 +256,7 @@ h3 {
 }
 
 .grid {
-  width: 1160px;
-  height: 576px;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -281,7 +288,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 100px;
+  padding: 1%;
 }
 
 .connect-container {
@@ -297,9 +304,11 @@ h3 {
   flex-direction: row;
   justify-content: space-between;
   gap: 24px;
-  width: 1160px;
+  width: 100%;
   height: 124px;
   margin: 100px 0;
+  overflow-x: scroll;
+  border: 3px solid red;
 }
 
 .platform-logos div {
@@ -307,9 +316,11 @@ h3 {
   align-items: center;
   justify-content: center;
   border-radius: 8px;
-  width: 124px;
-  height: 124px;
+  width: 20%;
+  height: 100%;
+  padding: 20px;
   background-color: white;
+  border: 3px solid purple;
 }
 
 .platform-logos div:nth-child(2) {
@@ -562,12 +573,22 @@ footer ul li {
   .nav {
     padding: 20px;
   }
+  .partner-section h3 {
+    font-size: 5.5em;
+  }
+  .connect-container h3 {
+    font-size: 5em;
+  }
 }
 
 /* up to 950 */
 @media only screen and (max-width: 950px) {
   .nav {
     display: none;
+  }
+
+  .green-container h1 {
+    font-size: 5em;
   }
 
   .mobile-nav {
@@ -605,6 +626,15 @@ footer ul li {
     width: 18px;
     border: 1px solid white;
     border-radius: 50px;
+  }
+  .partner-section h3 {
+    font-size: 4em;
+  }
+  .hero-cta {
+    width: 30%;
+  }
+  .connect-container h3 {
+    font-size: 4em;
   }
 }
 
@@ -690,6 +720,12 @@ footer ul li {
   .tab4 {
     transform: rotate(4deg);
   }
+  .hero-cta {
+    width: 40%;
+  }
+  .hero-cta span {
+    font-size: 1.2em;
+  }
 
   /* green section */
 
@@ -732,8 +768,14 @@ footer ul li {
     font-size: 3.6em;
   }
 
+  .partner-section {
+    padding: 20px;
+    justify-content: flex-start;
+  }
+
   .grid {
     width: 100%;
+    gap: 18px;
   }
   .grid div {
     width: 162px;
@@ -744,14 +786,62 @@ footer ul li {
     height: 25px;
   }
   .how-it-works {
-    height: 230vh;
+    height: 200vh;
   }
 
   /* connect */
   .connect {
-    width: 100;
+    padding: 50px 0 0 0;
+  }
+  .connect-container {
+    width: 100vw;
   }
   .connect h3 {
     font-size: 3.6em;
+    padding: 0 16px;
+    text-align: center;
+  }
+
+  .platform-logos {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 64px;
+    gap: 18px;
+    overflow-x: scroll;
+    padding-left: 20px;
+  }
+
+  .platform-logos div {
+    width: 64px;
+    height: 64px;
+    padding: 0 16px;
+  }
+  .platform-logos div img {
+    width: 30px;
+    height: 30px;
+  }
+  .tweets {
+    width: 100%;
+    height: fit-content;
+  }
+  .tweets img {
+    width: 90%;
+    height: auto;
+  }
+  .trend-btn {
+    padding: 10px;
+  }
+
+  .connect-container button {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 44px;
+    color: white;
+    border-radius: 40px;
+    padding: 20px;
   }
 }
