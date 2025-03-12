@@ -24,7 +24,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Effra", Helvetica, sans-serif;
-  border: 1px solid hotpink;
 }
 
 html {
@@ -308,7 +307,6 @@ h3 {
   height: 124px;
   margin: 100px 0;
   overflow-x: scroll;
-  border: 3px solid red;
 }
 
 .platform-logos div {
@@ -320,7 +318,6 @@ h3 {
   height: 100%;
   padding: 20px;
   background-color: white;
-  border: 3px solid purple;
 }
 
 .platform-logos div:nth-child(2) {
@@ -346,7 +343,7 @@ h3 {
 
 .pricing {
   width: 100vw;
-  height: 1128px;
+  padding: 5%;
   background-color: black;
   display: flex;
   flex-direction: column;
@@ -391,10 +388,12 @@ h3 {
 }
 
 .price-cards {
-  width: 1140px;
+  width: 100%;
+  min-width: 90vw;
   height: 640px;
   display: flex;
   justify-content: space-between;
+  gap: 3%;
 }
 
 .card,
@@ -405,6 +404,7 @@ h3 {
   align-items: center;
   width: 360px;
   height: 100%;
+  padding: 3%;
 }
 
 /* .price-cards:nth-child(2) {
@@ -558,13 +558,23 @@ footer ul li {
   list-style: none;
 }
 
-/* anything over 1020 */
+/* anything over 951 */
 @media only screen and (min-width: 951px) {
   .mobile-nav-logo {
     display: none;
   }
   .mobile-nav {
     display: none;
+  }
+}
+/* up to 1200 */
+@media only screen and (max-width: 1200px) {
+  .price-cards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: fit-content;
+    gap: 40px;
   }
 }
 
@@ -636,14 +646,19 @@ footer ul li {
   .connect-container h3 {
     font-size: 4em;
   }
+  .contact-container h1 {
+    font-size: 4em;
+  }
 }
 
+/* anything over 650 */
 @media only screen and (min-width: 650px) {
   .mobile-tabs {
     display: none;
   }
 }
 
+/* up to 650 */
 @media only screen and (max-width: 650px) {
   /* hero section */
   .headline {
@@ -843,5 +858,32 @@ footer ul li {
     color: white;
     border-radius: 40px;
     padding: 20px;
+  }
+
+  /* pricing */
+  .pricing h3 {
+    font-size: 4em;
+  }
+
+  /* conatct section */
+  .contact-container h1 {
+    font-size: 3em;
+  }
+
+  /* footer */
+  footer {
+    padding: 5%;
+  }
+
+  footer img {
+    margin: 30px;
+  }
+  footer,
+  footer ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    height: 300px;
   }
 }
