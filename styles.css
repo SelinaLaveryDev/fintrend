@@ -237,8 +237,9 @@ nav li {
 }
 
 .how-it-works article {
-  width: 80%;
-  margin: 10%;
+  /* width: 80%; */
+  /* margin: 10%; */
+  padding: 100px;
 }
 
 h3 {
