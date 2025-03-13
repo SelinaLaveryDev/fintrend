@@ -279,8 +279,8 @@ h3 {
 }
 
 .grid div {
-  /* width: 266px;
-  height: 120px; */
+  width: 266px;
+  height: 120px;
   background-color: var(--grey-3);
   border-radius: 8px;
   display: flex;
@@ -290,8 +290,9 @@ h3 {
 }
 
 .grid div img {
-  width: 190px;
-  height: 40px;
+  max-width: 100%; /* Image won't exceed the div's width */
+  max-height: 100%; /* and height */
+  object-fit: contain; /* logos maintain their aspect ratio */
 }
 
 /* connect section */
