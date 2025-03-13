@@ -34,7 +34,6 @@ html {
 
 body {
   overflow-x: hidden;
-  width: 100vw;
 }
 
 section,
@@ -370,14 +369,15 @@ h3 {
 /* pricing section */
 
 .pricing {
-  width: 100vw;
-  padding: 5%;
+  width: 100%;
   background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
+  gap: 50px;
+  padding: 100px;
 }
 
 .pricing h3 {
@@ -389,8 +389,8 @@ h3 {
   display: flex;
   gap: 20px;
   align-items: center;
-  margin: 30px 0;
-  margin-bottom: 100px;
+  /* margin: 30px 0;
+  margin-bottom: 100px; */
 }
 .toggle img {
   display: none;
@@ -400,6 +400,11 @@ h3 {
   color: white;
   font-size: 2.4em;
   font-weight: 500;
+}
+.toggle span {
+  color: #b0adad;
+  font-size: 24px;
+  font-weight: 100;
 }
 
 .bg {
@@ -421,12 +426,11 @@ h3 {
 }
 
 .price-cards {
-  width: 100%;
-  min-width: 90vw;
-  height: 640px;
+  /* min-width: 90vw; */
+  /* height: 640px; */
   display: flex;
-  justify-content: space-between;
-  gap: 3%;
+  justify-content: center;
+  gap: 20px;
 }
 
 .card,
@@ -434,10 +438,16 @@ h3 {
   border-radius: 16px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 360px;
-  height: 100%;
-  padding: 1.5%;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  /* width: 360px;
+  height: 100%; */
+}
+
+.top-container h3 {
+  font-size: 36px;
+  font-weight: 400;
 }
 
 /* .price-cards:nth-child(2) {
@@ -455,32 +465,29 @@ h3 {
 .benefits-container {
   display: flex;
   flex-direction: column;
+  gap: 16px;
 }
 
 .card h3,
 .card-green h3 {
   font-size: 3.6em;
   color: black;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
 }
 
 hr {
   width: 296px;
-  margin: 16px 0;
-  opacity: 20%;
-}
-
-.top-container {
-  height: 80%;
-  margin-top: 20px;
+  /* padding: 20px 0; */
+  margin: 24px 0;
 }
 
 .bottom-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 296px;
-  height: 20%;
+  width: 100%;
+  padding-top: 32px;
+  /* height: 20%; */
 }
 
 .green-button {
@@ -489,8 +496,8 @@ hr {
 
 .green-button,
 .black-btn {
-  width: 100%;
-  height: 58px;
+  /* width: 100%; */
+  /* height: 58px; */
   border-radius: 30px;
   font-size: 1.8em;
   font-weight: 700;
@@ -510,13 +517,11 @@ hr {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  height: 50px;
-  gap: 10px;
 }
 
 .benefit img {
-  width: 14px;
-  height: 9px;
+  /* width: 14px;
+  height: 9px; */
 }
 
 .black-btn {
