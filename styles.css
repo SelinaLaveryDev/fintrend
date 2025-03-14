@@ -968,7 +968,7 @@ footer ul li {
   .arrow1 {
     display: flex;
     position: absolute;
-    top: 130px;
+    top: 160px;
     right: 0px;
   }
   .arrow2 {
@@ -998,6 +998,10 @@ footer ul li {
   .green-container h1 {
     font-size: 3.6em;
     padding: 0;
+  }
+
+  .white-box {
+    margin: 50px 0;
   }
 
   .partner-section {
@@ -1031,6 +1035,11 @@ footer ul li {
   .contact-container {
     padding: 20px 0;
     gap: 30px;
+  }
+
+  .contact-container button {
+    padding: 12px 24px;
+    font-size: 14px;
   }
 
   footer {
